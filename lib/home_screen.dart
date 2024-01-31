@@ -50,7 +50,7 @@ class HomeScreen extends StatelessWidget {
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => Place_Pages()));
               },
-              text: 'Sitios Turisticos',
+              text: 'Tourist Sites',
             ),
             Spacer(),
             Padding(
@@ -63,7 +63,7 @@ class HomeScreen extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => HomeScreen()));
                   },
                   child: const Text(
-                    'Skip',
+                    '',
                     style: TextStyle(
                         color: Colors.yellow,
                         fontSize: 26,

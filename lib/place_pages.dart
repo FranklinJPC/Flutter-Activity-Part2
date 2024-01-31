@@ -5,52 +5,61 @@ class Place_Pages extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('Sitios Turisticos Ecuador'),
+      appBar: AppBar(
+        title: Text('Ecuador Tourist Sites'),
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/fondo.jpg"),
+            fit: BoxFit.cover,
+          ),
         ),
-        body: FutureBuilder<List<Map<String, dynamic>>>(
-            future: FirebaseFirestore.instance
-                .collection('lugares_turisticos')
-                .get()
-                .then((QuerySnapshot querySnapshot) {
-              List<Map<String, dynamic>> places = [];
-              querySnapshot.docs.forEach((doc) {
-                places.add(doc.data() as Map<String, dynamic>);
-              });
-              return places;
-            }),
-            builder: (context, snapshot) {
-              if (snapshot.hasData) {
-                return ListView.builder(
-                  itemCount: snapshot.data!.length,
-                  itemBuilder: (context, index) {
-                    return Card(
-                      child: Column(
-                        children: [
-                          TitleSection(
-                            name: snapshot.data![index]['nombre_sitio'],
-                          ),
-                          ImagenSection(
-                            image: snapshot.data![index]['imagen_sitio'],
-                          ),
-                          TextSection(
-                            description: snapshot.data![index]
-                                ['descripcion_sitio'],
-                          ),
-                        ],
-                      ),
-                    );
-                  },
-                );
-              } else {
-                return Center(
-                  child: CircularProgressIndicator(),
-                );
-              }
-            }));
+        child: FutureBuilder<List<Map<String, dynamic>>>(
+          future: FirebaseFirestore.instance
+              .collection('lugares_turisticos')
+              .get()
+              .then((QuerySnapshot querySnapshot) {
+            List<Map<String, dynamic>> places = [];
+            querySnapshot.docs.forEach((doc) {
+              places.add(doc.data() as Map<String, dynamic>);
+            });
+            return places;
+          }),
+          builder: (context, snapshot) {
+            if (snapshot.hasData) {
+              return ListView.builder(
+                itemCount: snapshot.data!.length,
+                itemBuilder: (context, index) {
+                  return Card(
+                    child: Column(
+                      children: [
+                        TitleSection(
+                          name: snapshot.data![index]['nombre_sitio'],
+                        ),
+                        ImagenSection(
+                          image: snapshot.data![index]['imagen_sitio'],
+                        ),
+                        TextSection(
+                          description: snapshot.data![index]
+                              ['descripcion_sitio'],
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              );
+            } else {
+              return Center(
+                child: CircularProgressIndicator(),
+              );
+            }
+          },
+        ),
+      ),
+    );
   }
 }
-
 class TitleSection extends StatelessWidget {
   TitleSection({
     super.key,

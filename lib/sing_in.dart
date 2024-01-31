@@ -103,9 +103,14 @@ class _SignInState extends State<SignIn> {
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Text('Login'),
+                        Text(
+                          'Login',
+                          style: TextStyle(
+                            color: Colors.white, // Color blanco
+                          ),
+                        ),
                         SizedBox(width: 5),
-                        Icon(Icons.arrow_forward, size: 24.0),
+                        Icon(Icons.arrow_forward, size: 24.0, color: Colors.white),
                       ],
                     ),
                   ),

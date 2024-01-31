@@ -103,11 +103,17 @@ class _SignUpState extends State<SignUp> {
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                Text(' Sing Up'),
+                                Text(
+                                  ' Sing Up',
+                                  style: TextStyle(
+                                    color: Colors.white, // Color blanco
+                                  ),
+                                ),
                                 SizedBox(width: 5),
                                 Icon(
                                   Icons.arrow_forward,
                                   size: 24.0,
+                                  color: Colors.white
                                 )
                               ],
                             )),
