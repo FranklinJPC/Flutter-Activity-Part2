@@ -43,5 +43,38 @@ class DefaultFirebaseOptions {
     }
   }
 
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyBbcSPUaVtfQqeCoG0mAzfoKS0Loonxou4',
+    appId: '1:1099213389115:web:4b2962d3f3137b9dd24b1e',
+    messagingSenderId: '1099213389115',
+    projectId: 'fir-flutter-codelab-9fe3e',
+    authDomain: 'fir-flutter-codelab-9fe3e.firebaseapp.com',
+    storageBucket: 'fir-flutter-codelab-9fe3e.appspot.com',
+  );
 
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyDin-S7SQ3a1nidzXDZW_dDxKmCaDHH-Io',
+    appId: '1:1099213389115:android:4430fcf1dd94d3bad24b1e',
+    messagingSenderId: '1099213389115',
+    projectId: 'fir-flutter-codelab-9fe3e',
+    storageBucket: 'fir-flutter-codelab-9fe3e.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyA6KVh5q435Eoupiur36kNg5O1mY-JAlsU',
+    appId: '1:1099213389115:ios:2a9603bea0ccf726d24b1e',
+    messagingSenderId: '1099213389115',
+    projectId: 'fir-flutter-codelab-9fe3e',
+    storageBucket: 'fir-flutter-codelab-9fe3e.appspot.com',
+    iosBundleId: 'com.example.flutterFirebase',
+  );
+
+  static const FirebaseOptions macos = FirebaseOptions(
+    apiKey: 'AIzaSyA6KVh5q435Eoupiur36kNg5O1mY-JAlsU',
+    appId: '1:1099213389115:ios:20ff07e98f1ac011d24b1e',
+    messagingSenderId: '1099213389115',
+    projectId: 'fir-flutter-codelab-9fe3e',
+    storageBucket: 'fir-flutter-codelab-9fe3e.appspot.com',
+    iosBundleId: 'com.example.flutterFirebase.RunnerTests',
+  );
 }
