@@ -25,6 +25,14 @@ class _SignInState extends State<SignIn> {
         }
       },
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          elevation: 0.0,
+          leading: IconButton(
+            onPressed: () => Navigator.of(context).pop(),
+            icon: Icon(Icons.arrow_back, color: Colors.black),
+          ),
+        ),
         body: Padding(
           padding: const EdgeInsets.fromLTRB(20, 110, 20, 110),
           child: Column(
@@ -65,7 +73,7 @@ class _SignInState extends State<SignIn> {
                   suffixIcon: TextButton(
                     onPressed: () {},
                     child: const Text(
-                      'FORGOT',
+                      'WELCOME!',
                       style: TextStyle(color: Colors.green),
                     ),
                   ),
@@ -119,7 +127,7 @@ class _SignInState extends State<SignIn> {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => SignUp()));
                 },
-                child: Text(    
+                child: Text(
                   'Sign Up',
                   style: TextStyle(
                       fontFamily: 'SFUIDisplay',
