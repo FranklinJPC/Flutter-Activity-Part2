@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase/home_screen.dart';
+import 'package:flutter_firebase/sing_up.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({super.key});
@@ -83,10 +84,9 @@ class _SignInState extends State<SignIn> {
                               email: _emailAddressController.text,
                               password: _passwordController.text)
                           .then((value) => {
-                            Navigator.of(context).push(MaterialPageRoute(builder: 
-                            (context) =>HomeScreen()
-                            ))
-                          });
+                                Navigator.of(context).push(MaterialPageRoute(
+                                    builder: (context) => HomeScreen()))
+                              });
                     },
                     style: ElevatedButton.styleFrom(
                         primary: Colors.green,
@@ -115,8 +115,11 @@ class _SignInState extends State<SignIn> {
                   fontFamily: 'SFUIDisplay', color: Colors.black, fontSize: 15),
             ),
             TextButton(
-                onPressed: () {},
-                child: Text(
+                onPressed: () {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => SignUp()));
+                },
+                child: Text(    
                   'Sign Up',
                   style: TextStyle(
                       fontFamily: 'SFUIDisplay',
