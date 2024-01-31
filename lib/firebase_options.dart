@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyClHi698OgnkIhqdOL9L8UeqpxAMlMi9z0',
-    appId: '1:1050684194881:web:bd798e323e44d798ef46c0',
-    messagingSenderId: '1050684194881',
-    projectId: 'otherfirebaseflutter',
-    authDomain: 'otherfirebaseflutter.firebaseapp.com',
-    storageBucket: 'otherfirebaseflutter.appspot.com',
+    apiKey: 'Enter your credentials',
+    appId: 'Enter your credentials',
+    messagingSenderId: 'Enter your credentials',
+    projectId: 'Enter your credentials',
+    authDomain: 'Enter your credentials',
+    storageBucket: 'Enter your credentials',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDPFHEDpql8oz5jPtBO5dKuSz_tQ7PPSlk',
-    appId: '1:1050684194881:android:66ce86a47ca42cfeef46c0',
-    messagingSenderId: '1050684194881',
-    projectId: 'otherfirebaseflutter',
-    storageBucket: 'otherfirebaseflutter.appspot.com',
+    apiKey: 'Enter your credentials',
+    appId: 'Enter your credentials',
+    messagingSenderId: 'Enter your credentials',
+    projectId: 'Enter your credentials',
+    storageBucket: 'Enter your credentials',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDUz3Sa7oPlFM49tQQ1rHLyB18wHVwEHkU',
-    appId: '1:1050684194881:ios:4c5c131b498e8a79ef46c0',
-    messagingSenderId: '1050684194881',
-    projectId: 'otherfirebaseflutter',
-    storageBucket: 'otherfirebaseflutter.appspot.com',
-    iosBundleId: 'com.example.flutterFirebase',
+    apiKey: 'Enter your credentials',
+    appId: 'Enter your credentials',
+    messagingSenderId: 'Enter your credentials',
+    projectId: 'Enter your credentials',
+    storageBucket: 'Enter your credentials',
+    iosBundleId: 'Enter your credentials',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDUz3Sa7oPlFM49tQQ1rHLyB18wHVwEHkU',
-    appId: '1:1050684194881:ios:72d2c0df0a880c14ef46c0',
-    messagingSenderId: '1050684194881',
-    projectId: 'otherfirebaseflutter',
-    storageBucket: 'otherfirebaseflutter.appspot.com',
-    iosBundleId: 'com.example.flutterFirebase.RunnerTests',
+    apiKey: 'Enter your credentials',
+    appId: 'Enter your credentials',
+    messagingSenderId: 'Enter your credentials',
+    projectId: 'Enter your credentials',
+    storageBucket: 'Enter your credentials',
+    iosBundleId: 'Enter your credentials',
   );
 }
