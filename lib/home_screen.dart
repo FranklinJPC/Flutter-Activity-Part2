@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'sing_in.dart';
 import 'sing_up.dart';
+import 'place_pages.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -11,14 +12,13 @@ class HomeScreen extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration:  BoxDecoration(
+          decoration: BoxDecoration(
             image: DecorationImage(
-                image: AssetImage('assets/logodark.jpg'), 
-                fit: BoxFit.cover,
-                colorFilter: ColorFilter.mode(
-                  Colors.black.withOpacity(0.7), BlendMode.darken
-                  ),
-                ),
+              image: AssetImage('assets/logodark.jpg'),
+              fit: BoxFit.cover,
+              colorFilter: ColorFilter.mode(
+                  Colors.black.withOpacity(0.7), BlendMode.darken),
+            ),
           ),
           child: Column(children: [
             Padding(
@@ -44,11 +44,19 @@ class HomeScreen extends StatelessWidget {
               },
               text: 'Sign In',
             ),
+            SizedBox(height: 45),
+            Button(
+              onPressed: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => Place_Pages()));
+              },
+              text: 'Sitios Turisticos',
+            ),
             Spacer(),
             Padding(
-              padding: const EdgeInsets.only(bottom: 30,right: 20),
+              padding: const EdgeInsets.only(bottom: 30, right: 20),
               child: Align(
-                alignment:  Alignment.bottomRight,
+                alignment: Alignment.bottomRight,
                 child: TextButton(
                   onPressed: () {
                     Navigator.of(context).push(
