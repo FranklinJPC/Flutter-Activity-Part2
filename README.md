@@ -1,16 +1,21 @@
-# flutter_firebase
 
-A new Flutter project.
+# Taller Aplicaciones moviles
 
-## Getting Started
+### Integrantes
+- Melani Molina
+- Franklin Patiño
 
-This project is a starting point for a Flutter application.
+La parte uno de la actividad se encuentra en el siguiente link:
+- https://github.com/MelaniMolina/FlutterActivity-Part1.git
 
-A few resources to get you started if this is your first Flutter project:
+Evidencia de su funcionamiento
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Imagen de WhatsApp 2024-01-31 a las 09 30 29_f7b60e57](https://github.com/FranklinJPC/Flutter-Activity-Part2/assets/117754105/4cb052e2-e098-4f27-be4e-b7cd4719e8d0)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Parte 2
+La parte dos del taller se trata del login y los sitios turisticos del Ecuador.
+Para el funcionamiento de este proyecto se debera utilzar sus propias credenciales de Firebase.
+
+Para obtener el APK usar el siguiente link:
+- https://epnecuador-my.sharepoint.com/:u:/g/personal/franklin_patino_epn_edu_ec/EQN_gD3Sd-dEkSVoX6znSAIBFZNeOn0y66iFNBVziwUykQ?e=j7drOU
